@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    <nav id= "desktop-nav">
+        <div class="logo">Rodrigo Garcia</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></a></li>
+                <li><a href="#experience">Experience</a></a></li>
+                <li><a href="#projects">Projects</a></a></li>
+                <li><a href="#contact">Contact</a></a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id= "hamburger-nav">
+        <div class = "logo">Rodrigo Garcia</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></a></li>
+            <li><a href="#experience" onclick="toggleMenu()" >Experience</a></a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></a></li>
+            <li><a href="#contact" onclick="toggleMenu()" >Contact</a></a></li>
+        </div>
+      </div>
+            
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src ="./assets/head.JPG" alt="Rodrigo Garcia profile picture" />
+            </div>
+            <div class="section__text">
+                <p class= "section__text__p1">Hello, I'm</p>
+                <h1 class=" title">Rodrigo Garcia</h1>
+                <p class= "section__text__p2">Sophomore: Computer Science</p>
+                <div class="btn-container">
+                  <button 
+                    class = "btn btn-color-2"
+                    onclick ="window.open('./assets/Resume-2.pdf')"
+                  >
+                  Download Resume
+                  </button>
+                  <button 
+                    class = "btn btn-color-1"
+                    onclick ="location.href='./#contact'">
+                  Contact Info
+                  </button>
+                </div>
+                <div id = "socials-container">
+                    <img src="./assets/linkedin.png" alt="My Linkedin profile"
+                    class= "icon" 
+                    onclick="location.href='https://www.linkedin.com/in/rodrigo-garcia-84b004256/'"
+                    />
+                    <img src="./assets/github.png" alt="My Linkedin profile"
+                    class= "icon" 
+                    onclick="location.href='https://github.com/rgarcia2304'"
+                    />
+                    </div>
+            </div>
+
+        </div>
+    </section>
+    <section id ="about">
+        <p class ="section__text__p1">Get to Know More</p>
+        <h1 class ="title">About Me</h1>
+        <div class="section-container">
+            <div class=" section__pic-container">
+                <img src="./assets/psu.png" 
+                alt="Profile picture"
+                class="about-pic"
+                />
+            </div>
+            <div class=" about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                        alt="experience icon"
+                        class="icon" 
+                        />
+                        <h3>Experience</h3>
+                        <p2>Second Year<br>Computer Science</p2>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="experience icon"
+                        class="icon" 
+                        
+                        />
+                        <h3>Education</h3>
+                        <p2>Pennsylvania State University <br /> Bachelor of Science</p2>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <P>
+                        <!-- Text that will be used to write about me will be written here -->
+                        Hello! I'm a passionate sophomore Computer Science student on a mission<br>
+                         to unlock the limitless potential of technology.I am from a small town<br>
+                          in the Gettysburg, Pennsylvania area whos journey began with a fascination 
+                          for problem solving, which has now evolved into a relentless pursuit <br>
+                          of knowledge in all facets of software.<br>
+                           I'm eager to tackle complex problems and create innovative solutions.<br>
+                            Beyond the screen, I'm a dedicated problem solver, a team player, and a <br>
+                            lifelong learner, constantly seeking new challenges and opportunities to grow.<br>
+                             Join me as I embark on this exciting adventure in the ever-evolving world of computer science!
+
+                    </P>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Technical Languages</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p2>Basic</p2>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p2>Basic</p2>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p2>Experienced</p2>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p2>Basic</p2>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p2>Intermediate</p2>
+                  </div>
+                </article>
+                
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Languages</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Spanish</h3>
+                    <p2>Native Fluency</p2>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>English</h3>
+                    <p2>Native Fluency</p2>
+                  </div>
+                </article>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/website icion.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">This Website</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-3 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+               
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/2048.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">2048</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-3 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:rgarcia22141@gmail.com ">rgarcia22141@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/rodrigo-garcia-84b004256/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Rodrigo Garcia. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
